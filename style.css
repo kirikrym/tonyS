@@ -1,0 +1,129 @@
+body{
+  padding: 0;
+  margin: 0;
+}
+.ironMan{
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  overflow: hidden;
+  background-image: url(background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+}
+.text{
+  position: absolute;
+  top: 220px;
+  height: 300px;
+  transition: 1s;
+  h1{
+    text-align: center;
+  }
+  ul{
+    display: flex;
+    padding: 0;
+    align-items: center;
+    li{
+      width: 20px;
+      height: 20px;
+      margin: 5px;
+      list-style: none;
+      img{
+        width: 20px;
+      }
+    }
+  }
+  p{
+    padding: 5px;
+  }
+}
+.ironMan:hover{
+  .text{
+    top: 0;
+    backdrop-filter: blur(5px);
+    border-radius: 10px 10px 0 0;
+  }
+}
+.button{
+  padding: 5px;
+  text-align: center;
+  background-color: aliceblue;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 0 10px 10px 0;
+  color: black;
+  transition: 0.5s;
+}
+.button:hover{
+  background-color: black;
+  border: 1px solid white;
+  border-left: transparent;
+  color: white;
+}
+
+@media (hover: hover){
+  body{
+    padding: 0;
+    margin: 0;
+  }
+  .ironMan{
+    width: 400px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    color: white;
+  }
+  .text{
+    position: absolute;
+    top: 220px;
+    height: 300px;
+    transition: 1s;
+    h1{
+      text-align: center;
+    }
+    ul{
+      display: flex;
+      padding: 0;
+      align-items: center;
+      li{
+        width: 20px;
+        height: 20px;
+        margin: 5px;
+        list-style: none;
+        img{
+          width: 20px;
+        }
+      }
+    }
+    p{
+      padding: 5px;
+    }
+  }
+  .ironMan:hover{
+    .text{
+      top: 0;
+      backdrop-filter: blur(5px);
+      border-radius: 10px 10px 0 0;
+    }
+  }
+  .button{
+    padding: 5px;
+    text-align: center;
+    background-color: aliceblue;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 0 10px 10px 0;
+    color: black;
+    transition: 0.5s;
+  }
+}
